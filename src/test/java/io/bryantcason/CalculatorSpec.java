@@ -18,7 +18,29 @@ public class CalculatorSpec {
         assertEquals("The expected value should be 2", expectedSum, actualSum);
     }
     @Test
-    public void multTest(){
-        
+    public void multiplyTest(){
+        Calculator calculator = new Calculator();
+
+        int expectedProd = 9;
+        int actualProd = calculator.product(3,3);
+        assertEquals("The expected value should be 3", expectedProd, actualProd);
     }
+
+    @Test
+    public void subtractTest(){
+        Calculator calculator = new Calculator();
+
+        int expectedDiff = 0;
+        int actualDiff = calculator.difference(10, 10);
+        assertEquals("The expected value should be 10", expectedDiff, actualDiff);
+    }
+    @Test
+    public void divisionTest(){
+        Calculator calculator = new Calculator();
+
+        int expectedQuo = 1;
+        int actualQuo = calculator.quotient(100, 100);
+        assertEquals("The expected value should be 100", expectedQuo, actualQuo);
+    }
+
 }
